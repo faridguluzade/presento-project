@@ -1,0 +1,154 @@
+// SECTION HERO
+.section-hero {
+  height: calc(100vh - 8.3rem);
+  width: 100%;
+  background-image: linear-gradient(
+      rgba($color-black, 0.6),
+      rgba($color-black, 0.6)
+    ),
+    url(../../img/hero-bg.jpg);
+  background-size: cover;
+
+  color: $color-white;
+  line-height: 1.2;
+  font-family: $font-releway;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $bp-smallest) {
+    height: calc(80vh - 8.3rem);
+    background-position: bottom;
+  }
+}
+
+// SECTION CLIENTS
+.section-clients {
+  padding: 3.2rem 0 12.8rem 0;
+  background-color: $color-backround;
+
+  @media (max-width: $bp-small) {
+    padding: 3.2rem 0 8rem 0;
+  }
+}
+// SECTION ABOUT
+.section-about {
+  background-color: $color-gray-dark-2;
+  transform: $skew-decrease;
+  padding: 9.6rem 0;
+}
+
+// SECTION COUNTS
+.section-counts {
+  padding: 13rem 0 9rem 0;
+  background-color: $color-backround;
+
+  @media (max-width: $bp-small) {
+    padding: 9.6rem 0 6.4rem 0;
+  }
+}
+
+// SECTION TABS
+.section-tabs {
+  padding: 5rem 0 8rem;
+  background-color: $color-backround;
+
+  @media (max-width: $bp-small) {
+    padding: 3.2rem 0 6.4rem;
+  }
+}
+
+// SECTION SERVICES
+.section-services {
+  padding: 10rem 0 12rem;
+  background-color: $color-gray-dark-2;
+  color: $color-white;
+  transform: $skew-decrease;
+
+  & > * {
+    transform: $skew-increase;
+  }
+
+  @media (max-width: $bp-small) {
+    padding: 8rem 0 9.6rem;
+  }
+}
+
+// SECTION PORTFOLIO
+.section-portfolio {
+  padding: 8rem 0;
+  background-color: $color-backround;
+  color: $color-gray-dark-2;
+
+  @media (max-width: $bp-small) {
+    padding: 6.4rem 0;
+  }
+}
+
+// SECTION TESTIMONIALS
+.section-testimonials {
+  padding: 8rem 0 16rem 0;
+  background-color: $color-backround;
+
+  @media (max-width: $bp-small) {
+    padding: 4.8rem 0 12.8rem 0;
+  }
+}
+
+// SECTION PRICING
+.section-pricing {
+  padding: 7rem 0;
+  background-color: $color-gray-dark-2;
+  color: $color-white;
+  transform: $skew-decrease;
+
+  & > * {
+    transform: $skew-increase;
+  }
+}
+
+// SECTION ACCORDION
+.section-accordion {
+  padding: 10rem 0 12rem;
+  background-color: $color-backround;
+
+  @media (max-width: $bp-small) {
+    padding: 8rem 0 9.6rem 0;
+  }
+}
+
+// SECTION TEAM
+.section-team {
+  padding: 7rem 0 8rem;
+  background-color: $color-gray-dark-2;
+  color: $color-white;
+
+  transform: $skew-decrease;
+
+  & > * {
+    transform: $skew-increase;
+  }
+}
+
+// SECTION CONTACT
+.section-contact {
+  padding: 7rem 0 8rem;
+  background-color: $color-backround;
+}
+
+// FOOTER
+.footer {
+  font-size: 1.4rem;
+  color: $color-white;
+
+  &__top {
+    padding: 7rem 0 8rem;
+    background-color: $color-gray-dark-2;
+  }
+
+  &__bottom {
+    padding: 3rem 0;
+    background-color: $color-gray-dark-3;
+  }
+}

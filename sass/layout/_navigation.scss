@@ -1,0 +1,157 @@
+/* *************** */
+/* NAVIGATION */
+/* *************** */
+
+// .header {
+//   height: 8.3rem;
+// }
+
+.nav {
+  background: $color-white;
+  padding: 2.4rem 0;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $bp-smallest) {
+      padding: 0 3.2rem;
+    }
+  }
+
+  .logo {
+    @include logo;
+    font-size: 3rem;
+  }
+
+  &__main-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    font-family: $font-releway;
+  }
+
+  &__main-link:link,
+  &__main-link:visited {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: $color-gray-dark-3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  &__main-link:hover,
+  &__main-link:active {
+    color: $color-primary;
+  }
+
+  &__main-link--active:link,
+  &__main-link--active:visited {
+    color: $color-primary;
+  }
+
+  // GET STARTED BUTTON
+  &__main-link--get-started:link,
+  &__main-link--get-started:visited {
+    @include common-btn;
+    padding: 1rem 2.4rem;
+  }
+
+  &__main-link--get-started:hover,
+  &__main-link--get-started:active {
+    background-color: $color-gray-dark-3;
+  }
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.4rem;
+  width: 4.4rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: $bp-medium) {
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav__main {
+    background-color: rgba($color-black, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+
+    z-index: 1000;
+
+    transform: scale(0.25);
+    transition: all 0.5s ease-in;
+
+    //  Hide navigation
+    //  Allows NO transitions at all
+    // display: none;
+
+    //  1) Hide it visually
+    opacity: 0s;
+
+    //  2) Make it unaccessible to mouse and keyboard
+    pointer-events: none;
+
+    //  3) Hide it from screen readers
+    visibility: hidden;
+
+    &-list {
+      position: absolute;
+      top: 10.5rem;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $color-white;
+      box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+      border-radius: 3px;
+    }
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: block;
+  }
+
+  .nav__main-link:link,
+  .nav__main-link:visited {
+    font-size: 2.4rem;
+  }
+}

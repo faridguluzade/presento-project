@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  text-align: center;
+  padding: 3.5rem 0;
+
+  border-radius: $border-radius-md;
+  background-color: $color-gray-light-4;
+  color: $color-white;
+
+  &--business {
+    background-color: $color-primary;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-size: 4.2rem;
+
+    sup {
+      font-size: 2rem;
+    }
+
+    span {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__details {
+    list-style: none;
+    font-size: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .not {
+      color: rgba($color-gray-light-1, 0.6);
+      text-decoration: line-through;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    @include common-btn;
+    background-color: transparent;
+    font-size: 1.4rem;
+    border: 2px solid rgba($color-gray-light-1, 0.6);
+    padding: 1.3rem 4rem 1.4rem 4rem;
+    transition: all 0.3s;
+    font-family: $font-releway;
+  }
+
+  &__link:hover,
+  &__link:active {
+    border-color: $color-white;
+  }
+}

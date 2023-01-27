@@ -1,0 +1,57 @@
+/* *************** */
+/* COUNTS */
+/* *************** */
+
+.counts {
+  @media (max-width: $bp-medium) {
+    row-gap: 4.8rem;
+  }
+
+  &__box {
+    position: relative;
+    text-align: center;
+    background-color: $color-white;
+    box-shadow: $shadow-light;
+
+    p {
+      font-size: 1.4rem;
+      font-family: $font-releway;
+
+      @media (max-width: $bp-smallest) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    color: $color-primary;
+    padding: 1.2rem;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    background-color: $color-white;
+
+    position: absolute;
+    left: 50%;
+    top: -2.7rem;
+    transform: translateX(-50%);
+
+    @media (max-width: $bp-smallest) {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &__counter {
+    display: block;
+    font-size: 3.6rem;
+    font-weight: 700;
+    padding: 3.5rem 0 1.2rem 0;
+
+    @media (max-width: $bp-smallest) {
+      font-size: 3rem;
+    }
+  }
+}

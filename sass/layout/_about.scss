@@ -1,0 +1,122 @@
+/* *************** */
+/* ABOUT */
+/* *************** */
+
+.about {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 8rem;
+  transform: $skew-increase;
+
+  color: $color-white;
+
+  @media (max-width: $bp-large) {
+    grid-template-columns: 2fr max-content;
+    row-gap: 8rem;
+    column-gap: 0;
+  }
+
+  &__content {
+    @media (max-width: $bp-large) {
+      grid-column: 1/-1;
+    }
+  }
+
+  //CONTENT
+  &__heading {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media (max-width: $bp-medium) {
+      font-size: 3.2rem;
+    }
+
+    @media (max-width: $bp-smallest) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+
+    @media (max-width: $bp-smallest) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__btn:link,
+  &__btn:visited {
+    display: inline-block;
+    color: currentColor;
+    background-color: transparent;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: 600;
+    border: 2px solid $color-primary;
+    padding: 1.2rem 3.2rem;
+    transition: all 0.3s;
+
+    @media (max-width: $bp-smallest) {
+      font-size: 1.2rem;
+      padding: 0.8rem 2.4rem;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:active {
+    background-color: $color-primary;
+  }
+
+  //FUTURE
+  &__future {
+    display: grid;
+    gap: 4.8rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    @media (max-width: $bp-smallest) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__future-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    color: $color-primary;
+
+    @media (max-width: $bp-smallest) {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+
+    @media (max-width: $bp-smallest) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__text {
+    color: $color-gray-light-2;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+    @media (max-width: $bp-smallest) {
+      font-size: 1.4rem;
+    }
+  }
+}

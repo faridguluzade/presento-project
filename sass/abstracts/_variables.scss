@@ -1,0 +1,41 @@
+// COLOR
+$color-primary-light: #e65d5f;
+$color-primary: #e03a3c;
+$color-pink-light: #fceaea;
+$color-pink-dark: #fae1e2;
+
+$color-gray-light-1: #dcd9dc;
+$color-gray-light-2: #848484;
+$color-gray-light-3: #444444;
+$color-gray-light-4: #2b2b2b;
+
+$color-gray-dark-1: #252525;
+$color-gray-dark-2: #1b1b1b;
+$color-gray-dark-3: #111111;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-backround: #fdfdfd;
+
+// BORDER-RADIUS
+$border-radius-primary: 4px;
+$border-radius-md: 8px;
+
+// SKEW
+$skew-decrease: skewY(-3deg);
+$skew-increase: skewY(3deg);
+
+// SHADOW
+$shadow-light: 0 0.2rem 3.2rem rgba(0, 0, 0, 0.06);
+
+// FONT FAMILY
+$font-releway: "Raleway", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 56.25em; // 900px
+$bp-small: 40em; // 650px
+$bp-smallest: 34em; // 550px

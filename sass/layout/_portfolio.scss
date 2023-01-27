@@ -1,0 +1,47 @@
+.portfolio {
+  &__filters {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      text-transform: uppercase;
+      padding: 0.8rem 1.5rem 1rem 1.5rem;
+      font-weight: 600;
+      font-size: 1.4rem;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        @include common-btn;
+      }
+    }
+
+    .filter--active {
+      @include common-btn;
+    }
+  }
+
+  &__gallery {
+    // When filter is active then display grid
+    display: none;
+  }
+
+  &__photo {
+    overflow: hidden;
+    background: black;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.4s;
+      transform: scale(1.1);
+    }
+
+    & img:hover {
+      transform: scale(1.3);
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// Logo
+@mixin logo {
+  font-weight: 600;
+  color: $color-gray-dark-3;
+  font-family: "Poppins", sans-serif;
+
+  &-link:link,
+  &-link:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  span {
+    color: $color-primary;
+    margin-left: -0.7rem;
+  }
+}
+
+// common btn rules
+@mixin common-btn {
+  display: inline-block;
+  color: $color-white;
+  background-color: $color-primary;
+  border-radius: $border-radius-primary;
+  text-decoration: none;
+}
