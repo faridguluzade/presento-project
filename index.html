@@ -12,9 +12,21 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Raleway:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-    <title>Presento</title>
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Count up library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script type="module" defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Presento</title>
 </head>
 
 <body>
@@ -23,102 +35,107 @@
     <header class="header">
         <!-- MAIN NAVIGATION START -->
         <!-- --------------------- -->
-        <div class="nav">
-            <div class="nav__box container nav-open">
-                <h1 class="logo">
-                    <a class="logo-link" href="#">Presento <span>.</span></a>
-                </h1>
+        <div class="nav container">
+            <h1 class="logo">
+                <a class="logo-link" href="#">Presento <span>.</span></a>
+            </h1>
+            <nav class="nav__main">
+                <ul class="nav__main-list">
+                    <li><a href="#hero" class="nav__main-link">Home</a></li>
+                    <li><a href="#about" class="nav__main-link">About</a></li>
+                    <li><a href="#services" class="nav__main-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav__main-link">Portfolio</a></li>
+                    <li><a href="#team" class="nav__main-link">Team</a></li>
+                    <li><a href="#contact" class="nav__main-link">Contact</a></li>
+                    <li><a href="#about" class="nav__main-link nav__main-link--get-started  btn--scroll-to">Get
+                            Started</a></li>
+                </ul>
+            </nav>
 
-                <nav class="nav__main">
-                    <ul class="nav__main-list">
-                        <li><a href="#" class="nav__main-link nav__main-link--active">Home</a></li>
-                        <li><a href="#" class="nav__main-link">About</a></li>
-                        <li><a href="#" class="nav__main-link">Services</a></li>
-                        <li><a href="#" class="nav__main-link">Portfolio</a></li>
-                        <li><a href="#" class="nav__main-link">Team</a></li>
-                        <li><a href="#" class="nav__main-link">Blog</a></li>
-                        <li><a href="#" class="nav__main-link">Contact</a></li>
-                        <li><a href="#" class="nav__main-link nav__main-link--get-started ">Get Started</a></li>
-                    </ul>
-
-                </nav>
-
-                <button class="btn-mobile-nav">
-                    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-                    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-                </button>
-            </div>
-
+            <button class="btn-mobile-nav">
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button>
         </div>
         <!-- MAIN NAVIGATION END -->
         <!-- --------------------- -->
 
-
     </header>
     <!-- HEADER END -->
     <!-- ------------ -->
-
-
     <!-- ------------ -->
     <!--  MAIN AREA START -->
     <!-- ------------ -->
     <main>
         <!-- ----------- -->
         <!-- SECTION HERO START -->
-
-        <section class="section-hero">
+        <section class="section-hero" id="hero">
             <div class="hero container">
                 <div class="hero__box-text">
                     <h1 class="heading-primary mb-sm">Bettter digital experience with Presento</h1>
                     <p class="hero__description mb-md">We are team of talented designers making websites with
                         Bootstrap
                     </p>
-                    <a class="hero__link" href="#">Get Started</a>
+                    <a class="hero__link btn--scroll-to" href="#about">Get Started</a>
                 </div>
-
-
             </div>
         </section>
         <!-- SECTION HERO END -->
         <!-- --------- -->
 
-
         <!-- SECTION CLIENTS START -->
         <!-- --------------------- -->
         <section class="section-clients">
-            <div class="clients ">
-                <div class="clients__box container ">
-                    <img src="img/client-1.png" alt="Client photo 1" class="clients__photo">
-                    <img src="img/client-2.png" alt="Client photo 2" class="clients__photo">
-                    <img src="img/client-3.png" alt="Client photo 3" class="clients__photo">
-                    <!-- <img src="img/client-4.png" alt="Client photo 4" class="clients__photo">
-                    <img src="img/client-5.png" alt="Client photo 5" class="clients__photo">
-                    <img src="img/client-6.png" alt="Client photo 6" class="clients__photo"> -->
-                    <!-- <img src="img/client-7.png" alt="Client photo 7" class="clients__photo">
-                    <img src="img/client-8.png" alt="Client photo 8" class="clients__photo"> -->
+            <div class="clients" data-aos="zoom-in">
+                <div class="clients__box container">
+                    <figure class="clients__item">
+                        <img src="img/client-1.png" alt="Client photo 1" class="clients__photo">
+                    </figure>
+                    <figure class="clients__item">
+                        <img src="img/client-2.png" alt="Client photo 2" class="clients__photo">
+                    </figure>
+                    <figure class="clients__item">
+                        <img src="img/client-3.png" alt="Client photo 3" class="clients__photo">
+                    </figure>
+                    <figure class="clients__item">
+                        <img src="img/client-4.png" alt="Client photo 4" class="clients__photo">
+                    </figure>
+                    <figure class="clients__item">
+                        <img src="img/client-5.png" alt="Client photo 5" class="clients__photo">
+                    </figure>
+                    <figure class="clients__item">
+                        <img src="img/client-6.png" alt="Client photo 6" class="clients__photo">
+                    </figure>
+
+                    <figure class="clients__item">
+                        <img src="img/client-7.png" alt="Client photo 7" class="clients__photo">
+                    </figure>
+                    <figure class="clients__item">
+                        <img src="img/client-8.png" alt="Client photo 8" class="clients__photo">
+                    </figure>
+
                 </div>
 
                 <div class="dots">
-                    <button class="dots__dot dots__dot--active">&nbsp;</button>
+                    <!-- <button class="dots__dot dots__dot--active">&nbsp;</button>
                     <button class="dots__dot">&nbsp;</button>
                     <button class="dots__dot">&nbsp;</button>
                     <button class="dots__dot">&nbsp;</button>
                     <button class="dots__dot">&nbsp;</button>
                     <button class="dots__dot">&nbsp;</button>
                     <button class="dots__dot">&nbsp;</button>
-                    <button class="dots__dot">&nbsp;</button>
+                    <button class="dots__dot">&nbsp;</button> -->
                 </div>
             </div>
         </section>
         <!-- SECTION CLIENTS END -->
         <!-- --------------------- -->
 
-
         <!-- --------------------- -->
         <!-- SECTION ABOUT START -->
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="about container">
-                <div class="about__content">
+                <div class="about__content" data-aos="fade-up">
                     <h3 class="about__heading mb-md">Voluptatem dignissimos provident quasi</h3>
                     <p class="about__description mb-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in
@@ -127,25 +144,25 @@
                     <a class="about__btn" href="#"> About us &gt;</a>
                 </div>
                 <div class="about__future">
-                    <div class="about__future-box">
+                    <div class="about__future-box" data-aos="fade-up" data-aos-delay="100">
                         <ion-icon class="about__icon" name="receipt-outline"></ion-icon>
                         <h4 class="about__title">Corporis voluptates sit</h4>
                         <p class="about__text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi
                             ut aliquip</p>
                     </div>
-                    <div class="about__future-box">
+                    <div class="about__future-box" data-aos="fade-up" data-aos-delay="200">
                         <ion-icon class="about__icon" name="cube-outline"></ion-icon>
                         <h4 class="about__title">Ullamco laboris nisi</h4>
                         <p class="about__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                             deserunt</p>
                     </div>
-                    <div class="about__future-box">
+                    <div class="about__future-box" data-aos="fade-up" data-aos-delay="300">
                         <ion-icon class="about__icon" name="images-outline"></ion-icon>
                         <h4 class="about__title">Labore consequatur</h4>
                         <p class="about__text">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis
                             facere</p>
                     </div>
-                    <div class="about__future-box">
+                    <div class="about__future-box" data-aos="fade-up" data-aos-delay="400">
                         <ion-icon class="about__icon" name="shield-outline"></ion-icon>
                         <h4 class="about__title">Beatae veritatis</h4>
                         <p class="about__text">Expedita veritatis consequuntur nihil tempore laudantium vitae denat
@@ -161,25 +178,25 @@
         <!-- --------------------- -->
         <!-- SECTION COUNTS START -->
         <section class="section-counts">
-            <div class="counts container grid grid--4-cols">
+            <div class="counts container grid grid--4-cols" id="counts" data-aos="fade-up">
                 <div class="counts__box">
                     <ion-icon class="counts__icon" name="happy-outline"></ion-icon>
-                    <span class="counts__counter">232</span>
+                    <span class="counts__counter" data-value="232">232</span>
                     <p class="mb-md">Happy Clients</p>
                 </div>
                 <div class="counts__box">
                     <ion-icon class="counts__icon" name="journal-outline"></ion-icon>
-                    <span class="counts__counter">521</span>
+                    <span class="counts__counter" data-value="521">521</span>
                     <p class="mb-md">Projects</p>
                 </div>
                 <div class="counts__box">
                     <ion-icon class="counts__icon" name="headset-outline"></ion-icon>
-                    <span class="counts__counter">1463</span>
+                    <span class="counts__counter" data-value="1463">1463</span>
                     <p class="mb-md">Hours Of Support</p>
                 </div>
                 <div class="counts__box">
                     <ion-icon class="counts__icon" name="people-outline"></ion-icon>
-                    <span class="counts__counter">15</span>
+                    <span class="counts__counter" data-value="15">15</span>
                     <p class="mb-md">Hard Workers</p>
                 </div>
             </div>
@@ -192,27 +209,27 @@
         <!-- SECTION TABS START -->
         <section class="section-tabs">
             <div class="tabs container">
-                <div class="tabs__category grid grid--4-cols mb-md">
-                    <div class="tabs__select tabs__select--active">
+                <div class="tabs__category grid grid--4-cols mb-md" data-aos="fade-up">
+                    <div class="tabs__select tabs__select--active" data-tab="1">
                         <ion-icon class="tabs__icon" name="radio-outline"></ion-icon>
                         <h4 class="tabs__title">Modi sit est dela pireda nest</h4>
                     </div>
-                    <div class="tabs__select">
+                    <div class="tabs__select" data-tab="2">
                         <ion-icon class="tabs__icon" name="accessibility-outline"></ion-icon>
                         <h4 class="tabs__title">
                             Unde praesenti mara setra le</h4>
                     </div>
-                    <div class="tabs__select">
+                    <div class="tabs__select" data-tab="3">
                         <ion-icon class="tabs__icon" name="sunny-outline"></ion-icon>
                         <h4 class="tabs__title">Pariatur explica nitro dela</h4>
                     </div>
-                    <div class="tabs__select">
+                    <div class="tabs__select" data-tab="4">
                         <ion-icon class="tabs__icon" name="storefront-outline"></ion-icon>
                         <h4 class="tabs__title">Nostrum qui dile node</h4>
                     </div>
                 </div>
 
-                <div class="tabs__content grid grid--2-cols">
+                <div class="tabs__content tabs__content--1 grid grid--2-cols" data-aos="fade-up">
                     <div>
                         <h3 class="tabs__heading">Voluptatem dignissimos provident quasi corporis voluptates sit
                             assumenda.</h3>
@@ -249,11 +266,11 @@
                             laborums</p>
                     </div>
 
-                    <figure>
+                    <figure data-aos="fade-up" data-aos-delay="100">
                         <img src="img/tabs-1.jpg" class="tabs__img" alt="Tabs Photo 1">
                     </figure>
                 </div>
-                <div class="tabs__content  grid--2-cols">
+                <div class="tabs__content tabs__content--2  grid--2-cols" data-aos="fade-up">
                     <div>
                         <h3 class="tabs__heading">Voluptatem dignissimos provident quasi corporis voluptates sit
                             assumenda.</h3>
@@ -292,12 +309,12 @@
 
                     </div>
 
-                    <figure>
+                    <figure data-aos="fade-up" data-aos-delay="100">
                         <img src="img/tabs-2.jpg" class="tabs__img" alt="Tabs Photo 2">
                     </figure>
                 </div>
 
-                <div class="tabs__content  grid--2-cols">
+                <div class="tabs__content tabs__content--3  grid--2-cols" data-aos="fade-up">
                     <div>
                         <h3 class="tabs__heading">Voluptatem dignissimos provident quasi corporis voluptates sit
                             assumenda.</h3>
@@ -331,11 +348,11 @@
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
-                    <figure>
+                    <figure data-aos="fade-up" data-aos-delay="100">
                         <img src="img/tabs-3.jpg" class="tabs__img" alt="Tabs Photo 3">
                     </figure>
                 </div>
-                <div class="tabs__content  grid--2-cols">
+                <div class="tabs__content tabs__content--4  grid--2-cols" data-aos="fade-up">
                     <div>
                         <h3 class="tabs__heading">Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore
                             rerum</h3>
@@ -371,7 +388,7 @@
                             incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
-                    <figure>
+                    <figure data-aos="fade-up" data-aos-delay="100">
                         <img src="img/tabs-4.jpg" class="tabs__img" alt="Tabs Photo 4">
                     </figure>
                 </div>
@@ -382,17 +399,20 @@
 
         <!-- SECTION SERVICES START -->
         <!-- --------------------- -->
-        <section class="section-services">
+        <section class="section-services" id="services">
 
             <div class="container text-center">
-                <h2 class="heading-secondary">Services</h2>
-                <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
-                    fuga
-                    eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
-                    suscipit alias ea.</p>
+                <div data-aos="fade-up">
+                    <h2 class="heading-secondary">Services</h2>
+                    <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga
+                        eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea.</p>
+                </div>
+
             </div>
             <div class="services container grid grid--2-cols grid--3-rows">
-                <div class="services__box">
+                <div class="services__box" data-aos="fade-up" data-aos-delay="100">
                     <ion-icon class="services__icon" name="briefcase-outline"></ion-icon>
                     <h4 class="services__title">
                         <a class="services__link" href="#">Lorem Ipsum</a>
@@ -402,7 +422,7 @@
                         excepturi
                         sint occaecati cupiditate non provident</p>
                 </div>
-                <div class="services__box">
+                <div class="services__box" data-aos="fade-up" data-aos-delay="200">
                     <ion-icon class="services__icon" name="calendar-outline"></ion-icon>
                     <h4 class="services__title">
                         <a class="services__link" href="#">Dolor Sitema</a>
@@ -410,7 +430,7 @@
                     <p class="services__description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip ex ea commodo consequat tarad limino ata</p>
                 </div>
-                <div class="services__box">
+                <div class="services__box" data-aos="fade-up" data-aos-delay="300">
                     <ion-icon class="services__icon" name="cellular-outline"></ion-icon>
                     <h4 class="services__title">
                         <a class="services__link" href="#">Sed ut perspiciatis</a>
@@ -418,7 +438,7 @@
                     <p class="services__description">Duis aute irure dolor in reprehenderit in voluptate velit esse
                         cillum dolore eu fugiat nulla pariatur</p>
                 </div>
-                <div class="services__box">
+                <div class="services__box" data-aos="fade-up" data-aos-delay="400">
                     <ion-icon class="services__icon" name="git-branch-outline"></ion-icon>
                     <h4 class="services__title">
                         <a class="services__link" href="#">Nemo Enim</a>
@@ -427,7 +447,7 @@
                         qui
                         officia deserunt mollit anim id est laborum</p>
                 </div>
-                <div class="services__box">
+                <div class="services__box" data-aos="fade-up" data-aos-delay="500">
                     <ion-icon class="services__icon" name="briefcase-outline"></ion-icon>
                     <h4 class="services__title">
                         <a class="services__link" href="#">Lorem Ipsum</a>
@@ -437,7 +457,7 @@
                         excepturi
                         sint occaecati cupiditate non provident</p>
                 </div>
-                <div class="services__box">
+                <div class="services__box" data-aos="fade-up" data-aos-delay="600">
                     <ion-icon class="services__icon" name="checkbox-outline"></ion-icon>
                     <h4 class="services__title">
                         <a class="services__link" href="#">Eiusmod Tempor</a>
@@ -453,8 +473,8 @@
 
         <!-- SECTION PORTFOLIO START -->
         <!-- --------------------- -->
-        <section class="section-portfolio">
-            <div class="container text-center mb-md">
+        <section class="section-portfolio" id="portfolio">
+            <div class="container text-center mb-md" data-aos="fade-up">
                 <h2 class="heading-secondary">Portfolio</h2>
                 <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
                     fuga
@@ -462,81 +482,42 @@
                     suscipit alias ea.</p>
             </div>
             <div class="portfolio container">
-                <ul class="portfolio__filters mb-sm">
-                    <li class="filter--active">All</li>
-                    <li>App</li>
-                    <li>Card</li>
-                    <li>Web</li>
+                <ul class="portfolio__filters mb-sm" data-aos="fade-up" data-aos-delay="100">
+                    <li class="filter-item filter--active" data-filter="filter-all">All</li>
+                    <li class="filter-item" data-filter="filter-app">App</li>
+                    <li class="filter-item" data-filter="filter-card">Card</li>
+                    <li class="filter-item" data-filter="filter-web">Web</li>
                 </ul>
-                <div class="portfolio__gallery grid grid--3-cols grid--3-rows">
-                    <figure class="portfolio__photo">
+                <div class="portfolio__gallery grid grid--3-cols" data-aos="fade-up" data-aos-delay="200">
+                    <figure class="portfolio__photo filter-app">
                         <img src="img/portfolio-1.jpg" alt="Portfolio Photo 1">
                     </figure>
-                    <figure class="portfolio__photo">
+                    <figure class="portfolio__photo filter-web">
                         <img src="img/portfolio-2.jpg" alt="Portfolio Photo 2">
                     </figure>
-                    <figure class="portfolio__photo">
+                    <figure class="portfolio__photo filter-app">
                         <img src="img/portfolio-3.jpg" alt="Portfolio Photo 3">
                     </figure>
-                    <figure class="portfolio__photo">
+                    <figure class="portfolio__photo filter-card">
                         <img src="img/portfolio-4.jpg" alt="Portfolio Photo 4">
                     </figure>
-                    <figure class="portfolio__photo">
+                    <figure class="portfolio__photo filter-web">
                         <img src="img/portfolio-5.jpg" alt="Portfolio Photo 5">
                     </figure>
-                    <figure class="portfolio__photo">
+                    <figure class="portfolio__photo filter-app">
                         <img src="img/portfolio-6.jpg" alt="Portfolio Photo 6">
                     </figure>
-                    <figure class="portfolio__photo">
+                    <figure class="portfolio__photo filter-card">
                         <img src="img/portfolio-7.jpg" alt="Portfolio Photo 7">
                     </figure>
-                    <figure class="portfolio__photo">
+                    <figure class="portfolio__photo filter-card">
                         <img src="img/portfolio-8.jpg" alt="Portfolio Photo 8">
                     </figure>
-                    <figure class="portfolio__photo">
+                    <figure class="portfolio__photo filter-web">
                         <img src="img/portfolio-9.jpg" alt="Portfolio Photo 9">
                     </figure>
-
-                </div>
-                <div class="portfolio__gallery grid--3-cols grid--3-rows">
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-1.jpg" alt="Portfolio Photo 1">
-                    </figure>
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-3.jpg" alt="Portfolio Photo 3">
-                    </figure>
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-6.jpg" alt="Portfolio Photo 6">
-                    </figure>
-
-                </div>
-
-                <div class="portfolio__gallery   grid--3-cols grid--3-rows">
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-4.jpg" alt="Portfolio Photo 1">
-                    </figure>
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-7.jpg" alt="Portfolio Photo 3">
-                    </figure>
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-8.jpg" alt="Portfolio Photo 6">
-                    </figure>
-
-                </div>
-                <div class="portfolio__gallery grid--3-cols grid--3-rows">
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-2.jpg" alt="Portfolio Photo 1">
-                    </figure>
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-5.jpg" alt="Portfolio Photo 3">
-                    </figure>
-                    <figure class="portfolio__photo">
-                        <img src="img/portfolio-6.jpg" alt="Portfolio Photo 6">
-                    </figure>
-
                 </div>
             </div>
-
         </section>
         <!-- SECTION PORTFOLIO END -->
         <!-- --------------------- -->
@@ -546,7 +527,7 @@
         <!-- SECTION TESTIMONIALS START -->
 
         <section class="section-testimonials">
-            <div class="container text-center mb-md">
+            <div class="container text-center mb-sm" data-aos="fade-up">
                 <h2 class="heading-secondary">Testimonials</h2>
                 <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
                     fuga
@@ -554,7 +535,9 @@
                     suscipit alias ea.</p>
             </div>
 
-            <div class="slider container">
+
+
+            <div class="slider" data-aos="fade-up" data-aos-delay="100">
                 <div class="slide">
                     <figure class="testimonial">
                         <figcaption class="testimonial__user">
@@ -568,7 +551,8 @@
                             <svg class="testimonial__icon icon icon-quotes-left">
                                 <use xlink:href="img/symbol-defs.svg#icon-quotes-left"></use>
                             </svg>
-                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                            rhoncus.
                             Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
                             semper.
                             <svg class="testimonial__icon icon icon-quotes-right">
@@ -576,7 +560,9 @@
                             </svg>
                         </blockquote>
                     </figure>
-                    <!-- <figure class="testimonial">
+                </div>
+                <div class="slide">
+                    <figure class="testimonial">
                         <figcaption class="testimonial__user">
                             <img src="img/testimonials-2.jpg" class="testimonial__photo" alt="Testimonials photo 1">
                             <div class="testimonial__user-box">
@@ -588,7 +574,8 @@
                             <svg class="testimonial__icon icon icon-quotes-left">
                                 <use xlink:href="img/symbol-defs.svg#icon-quotes-left"></use>
                             </svg>
-                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                            cillum
                             eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
                             culpa.
                             <svg class="testimonial__icon icon icon-quotes-right">
@@ -596,6 +583,8 @@
                             </svg>
                         </blockquote>
                     </figure>
+                </div>
+                <div class="slide">
                     <figure class="testimonial">
                         <figcaption class="testimonial__user">
                             <img src="img/testimonials-3.jpg" class="testimonial__photo" alt="Testimonials photo 3">
@@ -608,14 +597,17 @@
                             <svg class="testimonial__icon icon icon-quotes-left">
                                 <use xlink:href="img/symbol-defs.svg#icon-quotes-left"></use>
                             </svg>
-                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
+                            duis
                             minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                             <svg class="testimonial__icon icon icon-quotes-right">
                                 <use xlink:href="img/symbol-defs.svg#icon-quotes-right"></use>
                             </svg>
                         </blockquote>
-                    </figure> -->
-                    <!-- <figure class="testimonial">
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure class="testimonial">
                         <figcaption class="testimonial__user">
                             <img src="img/testimonials-4.jpg" class="testimonial__photo" alt="Testimonials photo 4">
                             <div class="testimonial__user-box">
@@ -627,15 +619,19 @@
                             <svg class="testimonial__icon icon icon-quotes-left">
                                 <use xlink:href="img/symbol-defs.svg#icon-quotes-left"></use>
                             </svg>
-                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
-                            velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
+                            minim
+                            velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore
+                            illum
                             veniam.
                             <svg class="testimonial__icon icon icon-quotes-right">
                                 <use xlink:href="img/symbol-defs.svg#icon-quotes-right"></use>
                             </svg>
                         </blockquote>
-                    </figure> -->
-                    <!-- <figure class="testimonial">
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure class="testimonial">
                         <figcaption class="testimonial__user">
                             <img src="img/testimonials-5.jpg" class="testimonial__photo" alt="Testimonials photo 5">
                             <div class="testimonial__user-box">
@@ -647,22 +643,24 @@
                             <svg class="testimonial__icon icon icon-quotes-left">
                                 <use xlink:href="img/symbol-defs.svg#icon-quotes-left"></use>
                             </svg>
-                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
+                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                            veniam
                             enim culpa labore duis sunt culpa nulla illum cillum fugiat esse veniam culpa fore nisi
                             cillum quid.
                             <svg class="testimonial__icon icon icon-quotes-right">
                                 <use xlink:href="img/symbol-defs.svg#icon-quotes-right"></use>
                             </svg>
                         </blockquote>
-                    </figure> -->
+                    </figure>
+                </div>
 
-                    <div class="dots">
-                        <button class="dots__dot dots__dot--active">&nbsp;</button>
+                <div class="dots">
+                    <!-- <button class="dots__dot dots__dot--active">&nbsp;</button>
                         <button class="dots__dot">&nbsp;</button>
                         <button class="dots__dot">&nbsp;</button>
                         <button class="dots__dot">&nbsp;</button>
-                        <button class="dots__dot">&nbsp;</button>
-                    </div>
+                        <button class="dots__dot">&nbsp;</button> 
+                    -->
                 </div>
             </div>
         </section>
@@ -674,15 +672,17 @@
         <!-- SECTION PRICING START -->
         <section class="section-pricing">
             <div class="container text-center mb-md">
-                <h2 class="heading-secondary">Pricing</h2>
-                <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
-                    fuga
-                    eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
-                    suscipit alias ea.</p>
+                <div data-aos="fade-up">
+                    <h2 class="heading-secondary">Pricing</h2>
+                    <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga
+                        eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea.</p>
+                </div>
             </div>
 
             <div class="pricing container grid grid--3-cols">
-                <div class="card card--free">
+                <div class="card card--free" data-aos="fade-up" data-aos-delay="100">
                     <h4 class="card__heading">Free</h4>
                     <p class="card__price"><sup>$ </sup> 0<span> / month</span></p>
                     <ul class="card__details">
@@ -697,7 +697,7 @@
                         <a class="card__link" href="#">Buy Now</a>
                     </div>
                 </div>
-                <div class="card card--business">
+                <div class="card card--business" data-aos="fade-up" data-aos-delay="200">
                     <h4 class="card__heading">Business</h4>
                     <p class="card__price"><sup>$ </sup> 19<span> / month</span></p>
                     <ul class="card__details">
@@ -712,7 +712,7 @@
                         <a class="card__link" href="#">Buy Now</a>
                     </div>
                 </div>
-                <div class="card card--developer">
+                <div class="card card--developer" data-aos="fade-up" data-aos-delay="300">
                     <h4 class="card__heading">Developer</h4>
                     <p class="card__price"><sup>$ </sup> 29<span> / month</span></p>
                     <ul class="card__details">
@@ -735,11 +735,11 @@
         <!-- --------------------- -->
         <!-- SECTION ACCORDION START -->
         <section class="section-accordion">
-            <div class="container text-center mb-md">
+            <div class="container text-center mb-md" data-aos="fade-up">
                 <h2 class="heading-secondary">Frequently asked questions</h2>
             </div>
 
-            <div class="accordion container">
+            <div class="accordion container" data-aos="fade-up" data-aos-delay="100">
                 <div class="accordion__item ">
                     <div class="accordion__select-box">
                         <p class="accordion__text">Non consectetur a erat nam at lectus urna duis?</p>
@@ -754,7 +754,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion__item accordion__item--open">
+                <div class="accordion__item">
                     <div class="accordion__select-box">
                         <p class="accordion__text">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
                         </p>
@@ -803,7 +803,7 @@
                             tincidunt dui.
                     </div>
                 </div>
-                <div class="accordion__item ">
+                <div class="accordion__item">
                     <div class="accordion__select-box">
                         <p class="accordion__text">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</p>
                         <ion-icon class="accordion__open" name="chevron-down-outline"></ion-icon>
@@ -843,17 +843,19 @@
 
         <!-- --------------------- -->
         <!-- SECTION TEAM START -->
-        <section class="section-team">
+        <section class="section-team" id="team">
             <div class="container text-center mb-md">
-                <h2 class="heading-secondary">Team</h2>
-                <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
-                    fuga
-                    eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
-                    suscipit alias ea.</p>
+                <div data-aos="fade-up">
+                    <h2 class="heading-secondary">Team</h2>
+                    <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga
+                        eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea.</p>
+                </div>
             </div>
 
             <div class="container grid grid--4-cols">
-                <div class="team">
+                <div class="team" data-aos="fade-up" data-aos-delay="100">
                     <figure class="team__photo">
                         <img src="img/team-1.jpg" alt="Team Photo 1">
                         <div class="social">
@@ -877,7 +879,7 @@
                     </div>
                 </div>
 
-                <div class="team">
+                <div class="team" data-aos="fade-up" data-aos-delay="200">
                     <figure class="team__photo">
                         <img src="img/team-2.jpg" alt="Team Photo 2">
                         <div class="social">
@@ -900,7 +902,7 @@
                         <span class="team__job">Product Manager</span>
                     </div>
                 </div>
-                <div class="team">
+                <div class="team" data-aos="fade-up" data-aos-delay="300">
                     <figure class="team__photo">
                         <img src="img/team-3.jpg" alt="Team Photo 3">
                         <div class="social">
@@ -923,7 +925,7 @@
                         <span class="team__job">CTO</span>
                     </div>
                 </div>
-                <div class="team">
+                <div class="team" data-aos="fade-up" data-aos-delay="400">
                     <figure class="team__photo">
                         <img src="img/team-4.jpg" alt="Team Photo 4">
                         <div class="social">
@@ -954,15 +956,15 @@
 
         <!-- --------------------- -->
         <!-- SECTION CONTACT START -->
-        <section class="section-contact">
-            <div class="container text-center mb-md">
+        <section class="section-contact" id="contact">
+            <div class="container text-center mb-md" data-aos="fade-up">
                 <h2 class="heading-secondary">Contact</h2>
                 <p class="subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
                     fuga
                     eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
                     suscipit alias ea.</p>
             </div>
-            <div class="contact container grid grid--2-cols">
+            <div class="contact container grid grid--2-cols" data-aos="fade-up" data-aos-delay="100">
                 <div class="contact__box grid grid--2-cols">
                     <div class="contact__address">
                         <ion-icon class="contact__icon" name="location-outline"></ion-icon>
@@ -1101,8 +1103,7 @@
 
 
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
 
 </body>
 

@@ -2,18 +2,25 @@
 /* CLIENTS */
 /* *************** */
 .clients {
+  height: 10rem;
   position: relative;
+
   padding: 1.6rem 0;
-  animation: growInBehind 1.2s ease-out;
 
   &__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 11.6rem;
+    transition: transform 0.5s;
   }
 
   &__photo {
-    width: 11.6rem;
+    width: 100%;
     filter: grayscale(100%);
     opacity: 50%;
     transition: all 0.3s;

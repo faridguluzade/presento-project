@@ -23,14 +23,10 @@
     }
   }
 
-  &__gallery {
-    // When filter is active then display grid
-    display: none;
-  }
-
   &__photo {
     overflow: hidden;
     background: black;
+    transition: all 0.4s;
 
     img {
       width: 100%;
@@ -43,5 +39,14 @@
       transform: scale(1.3);
       opacity: 0.5;
     }
+  }
+
+  // Class for filters gallery
+  &__photo.hide {
+    display: none;
+  }
+
+  &__photo.show {
+    animation: growInBehind 0.5s ease;
   }
 }

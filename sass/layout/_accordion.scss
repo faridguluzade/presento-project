@@ -1,5 +1,6 @@
 .accordion {
   margin-top: 10rem;
+  transition: 0.4s;
 
   @media (max-width: $bp-small) {
     margin-top: 8rem;
@@ -46,7 +47,7 @@
   &__hidden-box {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 4s ease-out;
+    transition: max-height 0.3s ease-out;
   }
 
   &__paragraph {
@@ -55,12 +56,14 @@
     padding-bottom: 2rem;
   }
 
-  // OPEN ACTIVE
-  // .accordion__item--open &__hidden-box {
-  //   max-height: 7rem; // Scroll Height
-  // }
-
-  // .accordion__item--open &__select-box {
-  //   color: $color-primary;
-  // }
+  // // OPEN ACTIVE
+  .accordion__item--open {
+    color: $color-primary;
+  }
+  .accordion__item--open &__open {
+    display: none;
+  }
+  .accordion__item--open &__close {
+    display: block;
+  }
 }

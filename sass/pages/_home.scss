@@ -1,6 +1,6 @@
 // SECTION HERO
 .section-hero {
-  height: calc(100vh - 8.3rem);
+  height: 100vh;
   width: 100%;
   background-image: linear-gradient(
       rgba($color-black, 0.6),
@@ -18,7 +18,7 @@
   justify-content: center;
 
   @media (max-width: $bp-smallest) {
-    height: calc(80vh - 8.3rem);
+    height: 80vh;
     background-position: bottom;
   }
 }

@@ -17,7 +17,7 @@
   }
 
   &__box-text {
-    animation: moveInLeft 1s ease-out 0.6s;
+    animation: moveInLeft 1s ease-out;
 
     @media (max-width: $bp-large) {
       grid-column: 1/-1;
