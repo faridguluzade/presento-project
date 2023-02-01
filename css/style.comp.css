@@ -550,8 +550,7 @@ h5 {
       text-decoration: none;
       color: inherit; }
     .footer .logo span {
-      color: #e03a3c;
-      margin-left: -0.7rem; }
+      color: #e03a3c; }
   .footer__address-box {
     font-style: normal;
     font-family: "Raleway", sans-serif; }
@@ -720,8 +719,7 @@ h5 {
       text-decoration: none;
       color: inherit; }
     .nav .logo span {
-      color: #e03a3c;
-      margin-left: -0.7rem; }
+      color: #e03a3c; }
   .nav__main-list {
     list-style: none;
     display: flex;
@@ -1126,7 +1124,6 @@ h5 {
   justify-content: center; }
   @media (max-width: 34em) {
     .section-hero {
-      height: 80vh;
       background-position: bottom; } }
 
 .section-clients {
