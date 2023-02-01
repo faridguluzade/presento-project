@@ -120,9 +120,6 @@ h5 {
   max-width: 132rem;
   margin: 0 auto;
   padding: 0 3.2rem; }
-  @media (max-width: 56.25em) {
-    .container {
-      padding: 0 4.8rem; } }
 
 .text-center {
   text-align: center !important; }
@@ -355,7 +352,8 @@ h5 {
     font-size: 1.8rem;
     line-height: 1.4; }
   .accordion__open, .accordion__close {
-    font-size: 2rem; }
+    height: 2rem;
+    width: 2rem; }
   .accordion__close {
     display: none; }
   .accordion__hidden-box {
@@ -452,12 +450,18 @@ h5 {
   @media (max-width: 56.25em) {
     .contact__form {
       grid-column: 1 / -1; } }
+  @media (max-width: 34em) {
+    .contact__form {
+      padding: 1.6rem; } }
 
 .contact .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, min-content);
   gap: 3rem; }
+  @media (max-width: 34em) {
+    .contact .form {
+      gap: 1.6rem; } }
   .contact .form__subject, .contact .form__message, .contact .form__btn {
     grid-column: 1 /-1; }
   .contact .form input,
@@ -482,6 +486,10 @@ h5 {
     padding: 1.2rem 3.2rem;
     font-size: 1.6rem;
     cursor: pointer; }
+    @media (max-width: 34em) {
+      .contact .form__btn button {
+        padding: 0.8rem 2.4rem;
+        font-size: 1.4rem; } }
 
 /* *************** */
 /* COUNTS */
@@ -748,8 +756,8 @@ h5 {
   display: none; }
 
 .icon-mobile-nav {
-  height: 4.4rem;
-  width: 4.4rem;
+  height: 3.6rem;
+  width: 3.6rem;
   color: #333; }
 
 .icon-mobile-nav[name="close-outline"] {

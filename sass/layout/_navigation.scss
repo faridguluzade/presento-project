@@ -23,10 +23,6 @@
   justify-content: space-between;
   align-items: center;
 
-  // @media (max-width: $bp-smallest) {
-  //   padding: 0 3.2rem;
-  // }
-
   .logo {
     @include logo;
     font-size: 3rem;
@@ -81,8 +77,8 @@
 }
 
 .icon-mobile-nav {
-  height: 4.4rem;
-  width: 4.4rem;
+  height: 3.6rem;
+  width: 3.6rem;
   color: #333;
 }
 

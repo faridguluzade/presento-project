@@ -62,6 +62,10 @@
     @media (max-width: $bp-medium) {
       grid-column: 1 / -1;
     }
+
+    @media (max-width: $bp-smallest) {
+      padding: 1.6rem;
+    }
   }
 
   .form {
@@ -69,6 +73,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, min-content);
     gap: 3rem;
+
+    @media (max-width: $bp-smallest) {
+      gap: 1.6rem;
+    }
 
     &__subject,
     &__message,
@@ -99,6 +107,11 @@
         padding: 1.2rem 3.2rem;
         font-size: 1.6rem;
         cursor: pointer;
+
+        @media (max-width: $bp-smallest) {
+          padding: 0.8rem 2.4rem;
+          font-size: 1.4rem;
+        }
       }
     }
   }
